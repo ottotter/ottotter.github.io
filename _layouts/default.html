@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+  <div class="float-container">
+    <div class="float-child" id="sidenav">{% include navigation.html %}</div>
+    <div class="float-child" id="main">{{ content }}</div>
+  </div>
   </body>
 </html>
